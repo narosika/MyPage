@@ -1,21 +1,73 @@
+:root {
+    --bg-color: #f8f3ec;
+    --accent-color: #4b3621;
+    --card-bg: #fffaf3;
+    --text-color: #3e2c1a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
+
 header {
-    background-color: #333;
+    background-color: var(--accent-color);
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
-main {
-    padding: 20px;
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 0 20px;
+}
+
+.content-section {
+    padding: 40px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+}
+
 footer {
-    background-color: #333;
+    background-color: var(--accent-color);
     color: #fff;
     text-align: center;
     padding: 10px 0;

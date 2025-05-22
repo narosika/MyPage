@@ -9,16 +9,63 @@
 <body>
     <header>
         <h1>환영합니다!</h1>
-        <p>나를 소개하는 페이지입니다.</p>
+        <nav>
+            <ul>
+                <li><a href="#intro">소개</a></li>
+                <li><a href="#diary">일기</a></li>
+                <li><a href="#boardgames">보드게임 소개</a></li>
+                <li><a href="#portfolio">포트폴리오</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
+        <section id="intro" class="content-section">
             <h2>소개</h2>
             <p>안녕하세요! 여기에 본인의 소개글을 작성하세요.</p>
         </section>
+
+        <section id="diary" class="content-section">
+            <h2>일기</h2>
+            <div class="card">
+                <h3>첫 번째 일기</h3>
+                <p>여기에 따뜻한 일기 내용을 적어보세요.</p>
+            </div>
+        </section>
+
+        <section id="boardgames" class="content-section">
+            <h2>보드게임 소개</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>게임 1</h3>
+                    <p>게임에 대한 간단한 설명.</p>
+                </div>
+                <div class="card">
+                    <h3>게임 2</h3>
+                    <p>게임에 대한 간단한 설명.</p>
+                </div>
+                <div class="card">
+                    <h3>게임 3</h3>
+                    <p>게임에 대한 간단한 설명.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content-section">
+            <h2>포트폴리오</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>프로젝트 A</h3>
+                    <p>Java, Spring을 사용한 예시 프로젝트.</p>
+                </div>
+                <div class="card">
+                    <h3>프로젝트 B</h3>
+                    <p>SQL을 활용한 데이터베이스 프로젝트.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2023 MyPage</p>
+        <p>&copy; 2025 MyPage</p>
     </footer>
 </body>
 </html>
